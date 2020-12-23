@@ -10,6 +10,11 @@ import AVFoundation
 import CoreImage
 
 public struct VideoConfigurationEffectInfo {
+    public init(time: CMTime = CMTime.zero, renderSize: CGSize = CGSize.zero, timeRange: CMTimeRange = CMTimeRange.zero) {
+        self.time = time
+        self.renderSize = renderSize
+        self.timeRange = timeRange
+    }
     public var time = CMTime.zero
     public var renderSize = CGSize.zero
     public var timeRange = CMTimeRange.zero
